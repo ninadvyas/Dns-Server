@@ -1,0 +1,25 @@
+{
+    "example.com": {
+        "A": "192.168.1.1",
+        "AAAA": "2001:0db8:85a3:0000:0000:8a2e:0370:7334",
+        "CNAME": "alias.example.com",
+        "MX": [
+            { "exchange": "mail.example.com", "priority": 10 }
+        ],
+        "NS": [
+            "ns1.example.com",
+            "ns2.example.com"
+        ],
+        "TXT": [
+            "v=spf1 include:_spf.example.com ~all"
+        ],
+        "PTR": "example.com",
+        "SRV": [
+            { "priority": 10, "weight": 5, "port": 80, "target": "service.example.com" }
+        ],
+        "ttl": 300
+    },
+    "alias.example.com": {
+        "A": "192.168.1.2"
+    }
+}

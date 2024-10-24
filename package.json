@@ -1,0 +1,13 @@
+{
+  "name": "dns-node",
+  "version": "1.0.0",
+  "description": "A DNS server built using Node.js",
+  "main": "src/server.js", 
+  "scripts": {
+    "start": "node src/server.js" 
+  },
+  "dependencies": {
+    "native-dns": "^1.0.0",
+    "dns-packet": "^5.2.0"
+  }
+}
